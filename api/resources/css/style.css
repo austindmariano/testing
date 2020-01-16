@@ -1,0 +1,297 @@
+/* College Curriculum */
+
+
+/* Login  */
+.hr{
+	position: relative;
+	top: 30px;
+	left: 680px;
+	height: 630px;
+	width: 1px;
+	background: rgb(27,86,243);
+
+}
+.logo_title{
+	position: absolute;
+	left: 100px;
+	top: 190px;
+}
+#LoginComteqLogo {
+	position: relative;
+  width: 400px;
+  height: 200px;
+}
+
+#LoginBody{
+background-image: linear-gradient(silver,white,white,silver);
+background-repeat: no-repeat;
+height: 695px;
+overflow: hidden;
+}
+
+#LoginContainer{
+	border:solid 1px;
+	border-radius: 5px 5px 5px 5px;
+	border-color: rgb(27,86,243);
+	position: absolute;
+	width: 400px;
+	top: 180px;
+	left: 830px;
+}
+
+#LoginFormGroup{
+	margin: 20px;
+}
+/*  College Class Schedule*/
+/* ---------------------------------------------------- */
+/* Modal */
+.modal-content{
+	position: absolute;
+	width:800px;
+	left:-80px;
+}
+/* ---------------------------------------------------- */
+/* College Panel Class Schedule */
+#College_Sched_Panel{
+  margin-top:20px;
+}
+#College_Sched_Panel_Heading{
+  font-size:15pt;
+}
+#College_Sched_Form{
+  margin:10px;
+}
+#College_Sched_Row{
+margin:20px;
+display:flex;
+padding:3px;
+}
+#Edit_College_Schedule_Form{
+  position: relative;
+  left: 30px;
+}
+/* ---------------------------------------------------- */
+/* Add College Class Schedule */
+#Add_College_Schedule_Form{
+border:solid 1px rgb(27,86,243);
+}
+#Add_College_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Add_College_Subject_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Update_College_Subject_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Delete_College_Subject_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Add_College_Curriculum_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Update_College_Curriculum_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+#Delete_Curriculum_Subject_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+/* ---------------------------------------------------- */
+/* Edit College Class Schedule Modal */
+.modal-header{
+  border-bottom: solid 1px rgb(27,86,243);
+}
+
+
+.modal-footer{
+  border-top:solid 1px rgb(27,86,243);
+}
+
+
+
+
+/* update modal verification */
+
+#Update_College_Verification_Content{
+
+position: relative;
+top: 250px;
+left: 150px;
+width: 300px;
+
+
+}
+
+#Delete_College_Verification_Content{
+
+position: relative;
+top: 250px;
+left: 150px;
+width: 300px;
+
+}
+#Add_SH_Subject_Content{
+
+position: relative;
+top: 250px;
+left: 150px;
+width: 300px;
+
+}
+
+#Update_SH_Subject_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Delete_SH_Subject_Verification_Content{
+
+position: relative;
+top: 250px;
+left: 150px;
+width: 300px;
+
+}
+#Delete_College_Curriculum_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+
+
+
+
+/* End College Class Schedule */
+
+
+/* SH Schedule Verification */
+#Add_SH_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Update_SH_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Delte_SH_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Add_SH_Curriculum_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Update_SH_Curriculum_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+#Delete_SH_Curriculum_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+
+
+
+/* Senior High Schedule */
+#SH_Sched_Form{
+  margin:10px;
+}
+#Add_Sched_SH_Form{
+  border:solid 1px rgb(27,86,243);
+}
+#SH_Sched_Panel{
+  margin-top:20px;
+}
+#SH_Sched_Panel_Heading{
+font-size:15pt;
+}
+#SH_Sched_Row{
+  margin:20px;
+  display:flex;
+  padding:3px;
+}
+#Edit_SH_Schedule_Form{
+  position: relative;
+  left: 30px;
+}
+
+/* End Senior High Schedule */
+
+/* College Subject */
+#Edit_College_Subject_Form{
+  position: relative;
+  left: 10px;
+}
+
+/* End College Subject */
+
+
+/* instructor modals */
+#Add_Instructor_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Update_Instructor_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}
+
+#Delete_instructor_Verification_Content{
+	position: relative;
+	top: 250px;
+	left: 150px;
+	width: 300px;
+}

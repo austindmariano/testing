@@ -1,0 +1,57 @@
+$myConflicts = [];
+for ($i=0; $i <= 1; $i++) {
+  if($i == 0){
+    // run duplicateChecker function
+    if($this->duplicateChecker($class_schedule_data) == true){
+      // return response()->json(['message' => 'This subject already exist'], 400); // Bad request
+      $myConflicts['duplicate'] = "This subject is already scheduled.";
+    }
+  } // duplicate checker
+
+  if($i == 1){
+    //run roomChecker function
+    // if(!empty($this->roomChecker($class_schedule_data))){
+    //   $myConflicts->room_checker = "This room is already occupied from " . $class_schedule_data['time_start'] . " to " . $class_schedule_data['time_end'];
+    // }
+    // if(!$data->isEmpty()){
+      $data = $this->roomChecker($class_schedule_data);
+    if($data){
+      // 24 hour tp 12 hour conversion
+      $time_start  = date("g:iA", strtotime($data[0]->time_start));
+      $time_end  = date("g:iA", strtotime($data[0]->time_end));
+      $myConflicts['room_conflict'] = "The room " . $data[0]->room->room_number . " is already schedule from " . $time_start . " to " . $time_end . ".";
+      // $myConflicts->room_checker = $data;
+    }
+  } // room schedule checker
+
+  if($i == 2){
+    $data = $this->instructorChecker($class_schedule_data);
+    if($data){
+      $myConflicts['instructor_conflict'] = $data;
+    }
+  } // instructor schedule checker
+
+  if($i == 10){
+    // studentChecker function
+    if(!empty($data)){
+
+    }
+  } // student schedule checker
+} //end of loop
+// $errorConflicts = json_encode($myConflicts);
+
+// $conflicts = json_decode($myConflicts);
+// if(!$myConflicts->isEmpty()){
+//   $this->createSchedule($class_schedule_data,$user);
+// }else {
+// return response()->json($myConflicts);
+// }
+
+// if ($myConflicts != null) {
+if (!empty($myConflicts)) {
+return $myConflicts;
+}else {
+$this->createSchedule($class_schedule_data, $user);
+}
+// ========================
+//return conflicts here

@@ -1,0 +1,18 @@
+[2019-10-28 02:10:14] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class 'Illuminate\\Support\\Collection' not found at C:\\xampp\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php:470)
+[stacktrace]
+#0 C:\\xampp\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(216): collect(Array)
+#1 C:\\xampp\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(178): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#2 C:\\xampp\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(102): Illuminate\\Log\\LogManager->resolve('stack')
+#3 C:\\xampp\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(90): Illuminate\\Log\\LogManager->get('stack')
+#4 C:\\xampp\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(499): Illuminate\\Log\\LogManager->driver()
+#5 C:\\xampp\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(114): Illuminate\\Log\\LogManager->error('Maximum executi...', Array)
+#6 C:\\xampp\\api\\app\\Exceptions\\Handler.php(38): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalErrorException))
+#7 C:\\xampp\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(81): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalErrorException))
+#8 C:\\xampp\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(123): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\Debug\\Exception\\FatalErrorException))
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2019-10-28 02:10:17] laravel.ERROR: Maximum execution time of 30 seconds exceeded {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 1): Maximum execution time of 30 seconds exceeded at C:\\xampp\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:42)
+[stacktrace]
+#0 {main}
+"} 
